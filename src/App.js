@@ -1,10 +1,11 @@
 import React from 'react';
-import 'style/test.less'
-import  {Button}  from  'antd'
-function App() {
+import {Button} from 'antd'
+function App(props) {  //组件标签里面的东西需要用props接受 children
   return (
     <div className="App">
-        <Button type="danger">123</Button>
+     
+       {props.children}
+       {/* 把router里面的路由放到app里面 ，实现功能单一化 */}
     </div>
   );
 }

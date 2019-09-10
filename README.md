@@ -18,6 +18,11 @@ antd less
    npm install antd   
    在index.js import '/antd/dist/antd.css'
 按需引入
+  npm install babel-plugin-import  
+  webpack.config.js babel-loder
+ ['import',{'librarName':'antd','style':true}],
+ 注意本项目的less 版本和antd 的less   版本保持一致  2.7.3
+ 
 ### 基本配置
 1.起别名
     需要在config webpackconfig.js   alias  
@@ -40,3 +45,8 @@ axios  二次封装
 React.Component.prototype.$axios = axios
 路由  
 react-redux 
+
+
+### npm
+
+保证npm版本一样   node 版本一样
